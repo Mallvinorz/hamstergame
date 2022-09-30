@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
+
     public float speed = 5f;
     public float jumpForce = 100f;
     public float rotationSpeed;
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour
     Vector3 movementDirection;
 
     bool isSitDown = false;
+
     void Start()
     {
         playerAnim = this.GetComponent<Animator>();
