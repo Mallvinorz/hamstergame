@@ -1,0 +1,41 @@
+[33mcommit f05f7dcd22ee790e593eb461c717e4c95499371e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: mallvinorz <mallvino1216@gmail.com>
+Date:   Mon Sep 26 16:38:55 2022 +0700
+
+    tambah objek building
+
+[33mcommit 843ab164b3e14d7826d6dedf877a19503907e47f[m
+Merge: 606791f 97da9de
+Author: Mallvino Rezza <83599990+Mallvinorz@users.noreply.github.com>
+Date:   Mon Sep 26 16:13:55 2022 +0700
+
+    Merge pull request #2 from SeptAlfauzan/main
+    
+    add jump movement
+
+[33mcommit 97da9deaa3eb92b11fb2bda2fa755ae60c47cab2[m
+Author: SeptAlfauzan <alfauzansepta@gmail.com>
+Date:   Mon Sep 26 16:11:41 2022 +0700
+
+    add jump movement
+
+[33mcommit 606791fc0f7b6cfc13fe4ad64d29e6b931ef8e52[m
+Merge: 01114bc 445d8ef
+Author: Mallvino Rezza <83599990+Mallvinorz@users.noreply.github.com>
+Date:   Mon Sep 26 15:35:13 2022 +0700
+
+    Merge pull request #1 from SeptAlfauzan/main
+    
+    add movement
+
+[33mcommit 445d8ef2e541b716f763b3ddccd61fdb216e8c71[m
+Author: SeptAlfauzan <alfauzansepta@gmail.com>
+Date:   Mon Sep 26 15:33:55 2022 +0700
+
+    add movement
+
+[33mcommit 01114bceff90d45cc1e2956ebb76c39d4a5fd67c[m
+Author: mallvinorz <mallvino1216@gmail.com>
+Date:   Mon Sep 26 14:58:26 2022 +0700
+
+    upload project
