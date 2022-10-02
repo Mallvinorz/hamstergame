@@ -10,11 +10,12 @@ public class Player : MonoBehaviour
     public float jumpForce = 100f;
     public float rotationSpeed;
     public BoxCollider groundBox;
+
     Transform cameraTransform;
     Animator playerAnim;
     Vector3 movementDirection;
+    
     float turnSmoothVelocity;
-
     bool isSitDown = false;
 
     void Start()
@@ -53,13 +54,14 @@ public class Player : MonoBehaviour
         
         playerAnim.SetFloat("speed", movementDirection.magnitude);
         transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
-        // transform.localEulerAngles = new Vector3(transform.eulerAngles.x, cameraTransform.eulerAngles.y, transform.eulerAngles.z);
+       
         Debug.Log(cameraTransform.forward);
         Debug.Log(movementDirection);
     }
     void RotateMovement(){
-
-
+        Debug.Log(
+            "rotate dong"
+        );
         Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
             // float targetRotation = Mathf.Atan2 (movementDirection.x, movementDirection.y) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
