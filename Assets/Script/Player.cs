@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
 
     public float speed = 5f;
-    public float jumpForce = 100f;
+    public float jumpForce = 1f;
     public float rotationSpeed;
     public BoxCollider groundBox;
 
