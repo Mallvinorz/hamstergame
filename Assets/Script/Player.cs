@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -46,37 +47,28 @@ public class Player : MonoBehaviour
         float horizontalMove = Input.GetAxis("Horizontal");
         float verticalMove = Input.GetAxis("Vertical");
 
-        movementDirection = new Vector3(horizontalMove, 0, verticalMove);
-        // Debug.Log("before "+movementDirection);
-        movementDirection.Normalize();
-        // Debug.Log("after "+movementDirection);
-        // Debug.Log("magnitude "+movementDirection.magnitude);
+        movementDirection = new Vector3(horizontalMove, 0, verticalMove);//asign nilai input axis horizontal dan vertikal ke Vector3
+        movementDirection.Normalize();//normalize nilai movementDirection agar nilainya tetap 1 atau -1. sehingga kecepatan translate objek tetep konstan
         
         playerAnim.SetFloat("speed", movementDirection.magnitude);
-        transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
+        transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);//translate objek player, agar dapat bergerak
        
-        Debug.Log(cameraTransform.forward);
-        Debug.Log(movementDirection);
     }
-    void RotateMovement(){
-        Debug.Log(
-            "rotate dong"
-        );
+    void RotateMovement(){// berguna merotate objek player sesuai nilai movementDirection/ arah gerak player
         Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-            // float targetRotation = Mathf.Atan2 (movementDirection.x, movementDirection.y) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
-			// transform.eulerAngles = Vector3.up * Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRotation, ref turnSmoothVelocity, rotationSpeed);
 
     }
 
     void SitDown(){
-        playerAnim.SetBool("isSit", true);
+        playerAnim.SetBool("isSit", true);//trigger animasi duduk
         isSitDown = playerAnim.GetBool("isSit");
     }
     void StandUp(){
-        playerAnim.SetBool("isSit", false);
+        playerAnim.SetBool("isSit", false);//trigger animasi berdiri
         isSitDown = playerAnim.GetBool("isSit");
     }
+
     void Jump(){
         this.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, jumpForce, 0));
     }
