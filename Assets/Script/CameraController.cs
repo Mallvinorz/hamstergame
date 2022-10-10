@@ -17,11 +17,11 @@ public class CameraController : MonoBehaviour
     Vector3 currentRotation;
 
     private void LateUpdate() {//berguna untuk mengubah posisi camera sesuai letak kursor mouse
-        yaw += Input.GetAxis("Mouse X") * translateSpeed;
+        // yaw += Input.GetAxis("Mouse X") * translateSpeed;
         pitch -= Input.GetAxis("Mouse Y") * translateSpeed;
         pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
 
-        currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(pitch, yaw), ref rotationSmoothVelocity, rotationSmoothTime);
+        currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(pitch, 0), ref rotationSmoothVelocity, rotationSmoothTime);
         // Vector3 targetRotation = new Vector3(pitch, yaw);
         transform.eulerAngles = currentRotation;
 
