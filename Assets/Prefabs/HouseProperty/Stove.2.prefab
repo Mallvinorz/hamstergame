@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 7207967717230680527}
   - component: {fileID: 7076754999981450985}
   - component: {fileID: 2151900204535406719}
+  - component: {fileID: 5808540235027485197}
   m_Layer: 3
   m_Name: Stove.2
   m_TagString: Untagged
@@ -247,6 +248,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5808540235027485197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9208349218534194955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1956577, y: 1.5191177, z: 2.4127548}
+  m_Center: {x: -0.0069381893, y: -0.05637051, z: -0.30660698}
 --- !u!1 &9210611537650075974
 GameObject:
   m_ObjectHideFlags: 0

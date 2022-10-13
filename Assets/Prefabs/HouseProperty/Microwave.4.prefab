@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 1074426843199452762}
   - component: {fileID: 361416505005029459}
   - component: {fileID: 6596229285473678311}
+  - component: {fileID: 5468553996192411793}
   m_Layer: 3
   m_Name: Microwave.4
   m_TagString: Untagged
@@ -165,3 +166,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5468553996192411793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4437298966339327970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.08866, y: 0.7108761, z: 0.60485303}
+  m_Center: {x: -0.46760795, y: -0.34227014, z: 0.090601675}

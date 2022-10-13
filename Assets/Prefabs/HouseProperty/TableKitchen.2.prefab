@@ -343,6 +343,8 @@ GameObject:
   - component: {fileID: 1959868963920638052}
   - component: {fileID: 6963773576088522280}
   - component: {fileID: 4640069132911743716}
+  - component: {fileID: 8924914975210259579}
+  - component: {fileID: 8416019821065150553}
   m_Layer: 3
   m_Name: TableKitchen.2
   m_TagString: Untagged
@@ -418,3 +420,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8924914975210259579
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6996695910149842443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3358223, y: 3.7452388, z: 2.0635195}
+  m_Center: {x: -1.8562139, y: 1.2925637, z: -0.007346511}
+--- !u!65 &8416019821065150553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6996695910149842443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.7509751, y: 1.3387072, z: 2.0635195}
+  m_Center: {x: -0.64863753, y: 0.08929771, z: -0.007346511}

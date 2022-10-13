@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 1095833219072459969}
   - component: {fileID: 4175977162307532742}
   - component: {fileID: 4845041145652798819}
+  - component: {fileID: 1382316658283508835}
   m_Layer: 3
   m_Name: TableKitchen.5
   m_TagString: Untagged
@@ -167,6 +168,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1382316658283508835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634733316152133891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.121444, y: 1.4409918, z: 2.6088846}
+  m_Center: {x: 0.0015200377, y: 0.17090212, z: 0.15677904}
 --- !u!1 &3012762461117169406
 GameObject:
   m_ObjectHideFlags: 0
