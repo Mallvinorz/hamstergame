@@ -11,9 +11,9 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    public void Credit()
+    public void CreditGame()
     {
-        Debug.Log("Credit ...");
+        SceneManager.LoadScene("Credit");
     }
     public void ExitGame()
     {
