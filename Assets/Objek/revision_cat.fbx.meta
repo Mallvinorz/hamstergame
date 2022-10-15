@@ -38,6 +38,26 @@ ModelImporter:
     second: stand up
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 2eab25fba6476ed41a9aa77ab997ea16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pupils.001
+    second: {fileID: 2100000, guid: cd8d5691ed3223d40a6e3c6ad68c812a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SomaliTexture
+    second: {fileID: 2100000, guid: 847fa136333942e48998ab1e55b91653, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Whiskers
+    second: {fileID: 2100000, guid: ccb3ac951899a2f4997867254428fb4a, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: SomaliCat2
