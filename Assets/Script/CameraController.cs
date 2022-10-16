@@ -28,4 +28,7 @@ public class CameraController : MonoBehaviour
         transform.position = target.position - transform.forward * distance;//fokus kamera ke objek player
     }
     
+    public void setRotation(Vector3 rotation){
+        transform.eulerAngles = rotation;
+    }
 }
