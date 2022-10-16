@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c196ac212198174497ef8a71fe32283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerInSecond: 70
+  timerInSecond: 12
   blinkSpeed: 10
   timerText: {fileID: 106232756}
   gameOver: {fileID: 152584104}
