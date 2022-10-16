@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public float rotationSpeed;
     public BoxCollider groundBox;
 
+    public CameraController cameraController;
+
     Transform cameraTransform;
     Animator playerAnim;
     Vector3 movementDirection;
@@ -23,7 +25,6 @@ public class Player : MonoBehaviour
     {
         playerAnim = this.GetComponent<Animator>();
         isSitDown = playerAnim.GetBool("isSit");
-        cameraTransform = Camera.main.transform;
     }
     private void Update() {
         // Debug.Log(Input.GetAxis("Jump"));
@@ -71,5 +72,19 @@ public class Player : MonoBehaviour
 
     void Jump(){
         this.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, jumpForce, 0));
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag == "Room"){
+            cameraController.distance = 3;
+            // cameraController.setRotation(this.transform.rotation);
+        };
+    }
+    private void OnTriggerExit(Collider other) {
+        if(other.gameObject.tag == "Room"){
+            cameraController.distance = 10;
+            // cameraController.setRotation(this.transform.rotation);
+        };
+        
     }
 }
