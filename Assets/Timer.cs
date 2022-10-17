@@ -33,7 +33,6 @@ public class Timer : MonoBehaviour
             if(timeLeft > 0){
                 timeLeft -= Time.deltaTime;
             }else{
-                Debug.Log("waktumu sudah habis");
                 timeLeft = 0;
                 timerOn = false;
                 gameOver.GameOverOn();
@@ -46,7 +45,7 @@ public class Timer : MonoBehaviour
             secondStr = second < 10? "0" + second.ToString() : second.ToString();
 
             timerText.text = minuteStr + ":" + secondStr;
-            if(second < 10) timerText.color = new Color(255,255,255,(Mathf.Sin(Time.time * blinkSpeed)));
+            if(timeLeft < 10) timerText.color = new Color(255,255,255,(Mathf.Sin(Time.time * blinkSpeed)));
         }
     }
 }
